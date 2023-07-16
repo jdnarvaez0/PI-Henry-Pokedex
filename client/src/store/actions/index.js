@@ -9,11 +9,10 @@ export const ORDER_BY_ATTACK = "ORDER_BY_ATTACK";
 export const FILTER_POKES_BY_CREATED = "FILTER_POKES_BY_CREATED";
 export const CLEAR_DETAIL = "CLEAR_DETAIL";
 export const CREATE_POKEMON = "CREATE_POKEMON";
-const BASE_URL = "http://localhost:3001";
 
 export const getAllPokemons = () => async (dispatch) => {
 	try {
-		let allPokes = await axios.get(`${BASE_URL}/pokemons`);
+		let allPokes = await axios.get(`/pokemons`);
 		return dispatch({
 			type: GET_ALL_POKEMONS,
 			payload: allPokes.data,
@@ -25,7 +24,7 @@ export const getAllPokemons = () => async (dispatch) => {
 
 export const getPokemonByName = (poke) => async (dispatch) => {
 	try {
-		let info = await axios.get(`${BASE_URL}/pokemons?name=${poke}`);
+		let info = await axios.get(`/pokemons?name=${poke}`);
 		return dispatch({
 			type: GET_POKEMON_BY_NAME,
 			payload: info.data,
@@ -38,7 +37,7 @@ export const getPokemonByName = (poke) => async (dispatch) => {
 export const getPokemonDetail = (id) => async (dispatch) => {
 	try {
 		console.log("numero", id);
-		let detail = await axios.get(`${BASE_URL}/pokemons/${id}`);
+		let detail = await axios.get(`/pokemons/${id}`);
 		return dispatch({
 			type: GET_POKEMON_DETAIL,
 			payload: detail.data,
@@ -50,13 +49,13 @@ export const getPokemonDetail = (id) => async (dispatch) => {
 
 export const getAllTypes = () => async (dispatch) => {
 	return await axios
-		.get(`${BASE_URL}/types`)
+		.get(`/types`)
 		.then((res) => dispatch({ type: GET_ALL_TYPES, payload: res.data }));
 };
 
 export const postPokemon = (pokemon) => async (dispatch) => {
 	try {
-		await axios.post(`${BASE_URL}/pokemons`, pokemon);
+		await axios.post(`/pokemons`, pokemon);
 		return dispatch({
 			type: CREATE_POKEMON,
 		});
