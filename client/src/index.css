@@ -1,0 +1,30 @@
+@import-normalize;
+
+:root {
+  --bg: hsl(0, 0%, 10%);
+  --color-primary: #ffcc01;
+  --color-secundary: #2665aa;
+  /* --gradient: linear-gradient(-45deg, #ffcc01 50%, #2665aa 50%); */
+}
+
+@font-face {
+  font-family: "barcadebrawl";
+  src: url("../src/assets/fonts/BarcadeBrawl.ttf");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

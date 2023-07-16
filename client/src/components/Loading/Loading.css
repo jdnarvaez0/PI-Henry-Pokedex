@@ -1,0 +1,20 @@
+.container__loading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15em;
+}
+
+.gif__container {
+  text-align: center;
+}
+
+.loading__text {
+  font-family: "Press Start 2P", cursive;
+  color: white;
+}
+
+
+.loading__gif {
+  width: 15%;
+}

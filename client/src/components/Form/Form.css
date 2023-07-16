@@ -1,0 +1,73 @@
+.container_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin: 25px auto;
+  background-color: #696969;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(193, 41, 41, 0.5);
+}
+
+.formulario{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: "barcadebrawl";
+  font-size: 10px;
+}
+
+.form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  margin: 10px;
+}
+
+.form div{
+  margin: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form input {
+  width: 100%;
+  padding: 18px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.columns {
+  padding: 20px;
+}
+
+.btn-form button{
+  background: #fbca1f;
+  font-family: "barcadebrawl";
+  padding: 1.5em 1em;
+  font-weight: 900;
+  font-size: 8px;
+  border: 1px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+  margin: 18px;
+  font-size: 9px;
+}
+
+.btn-form a{
+  color: black;
+}
+
+.btn-form button:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+
+.btn-form button:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}

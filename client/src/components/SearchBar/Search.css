@@ -1,0 +1,44 @@
+input {
+  max-width: 190px;
+  height: 15px;
+  border: 2px solid transparent;
+  outline: none;
+  border-bottom: 2px solid #3f3f3f;
+  caret-color: white;
+  background-color: white;
+  padding: 5px;
+  transition: 0.5s linear;
+  font-family: "barcadebrawl";
+  font-size: 8px;
+  letter-spacing: 1px;
+}
+
+input:focus {
+  border: 2px solid #ffcc01;
+  /* caret-color: #fa4753; */
+  color: black;
+  box-shadow: 4px 4px 10px #070707;
+}
+
+input:focus::placeholder {
+  color: black;
+}
+
+/* .btn-search */
+.btn-search {
+  color: #090909;
+  padding: 0.1em 0.4em;
+  font-size: 18px;
+  /* border-radius: 0.5em; */
+  border: 1px solid #3e2828;
+  transition: all 0.3s;
+  margin-left: 3px;
+}
+
+.btn-search:hover {
+  border: 1px solid #ffcc01;
+}
+
+.btn-search:active {
+  box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
+}
