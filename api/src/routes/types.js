@@ -4,13 +4,13 @@ const router = Router();
 const { getTypes } = require("../controllers/types");
 
 router.get("/", async (req, res) => {
-  try {
-    await getTypes();
-    const types = await Types.findAll();
-    return res.json(types);
-  } catch (error) {
-    res.status(404).send(error.message);
-  }
+	try {
+		await getTypes();
+		const types = await Types.findAll();
+		return res.json(types);
+	} catch (error) {
+		res.status(404).send(error.message);
+	}
 });
 
 module.exports = router;
