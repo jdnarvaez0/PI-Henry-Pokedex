@@ -6,7 +6,7 @@ import Detail from "./components/Details/Detail";
 import Form from "./components/Form/Form";
 import axios from "axios";
 
-axios.defaults.baseURL = "http://localhost:3001";
+axios.defaults.baseURL = "https://api-pihenry.onrender.com";
 
 function App() {
 	return (
